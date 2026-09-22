@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#07110d">
     <title>Hash&ke GPT Astra AI</title>
-    <link rel="icon" type="image/webp" href="Aurora cloud logo.webp">
+    <link rel="icon" type="image/webp" href="./Aurora%20cloud%20logo.webp">
     <style>
         :root {
             --bg: #050b08;
@@ -131,6 +131,20 @@
             height: 39px;
             border-radius: 12px;
             flex: 0 0 auto;
+        }
+
+        .aurora-logo-img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            border-radius: inherit;
+        }
+
+        .hero-logo .aurora-logo-img {
+            width: 82%;
+            height: 82%;
         }
 
         .brand-title {
@@ -347,22 +361,6 @@
         .logo .astra-mark {
             width: 27px;
             height: 27px;
-        }
-
-        /* Aurora Cloud logo — contained cleanly inside the existing logo boxes */
-        .aurora-logo-img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: center;
-            border-radius: inherit;
-        }
-
-        .logo,
-        .hero-logo {
-            background: #ffffff;
-            overflow: hidden;
         }
 
         .welcome h1 {
@@ -2360,6 +2358,16 @@
             transform: translateY(-5px) rotate(-1.5deg) scale(1.045);
         }
 
+        .logo .astra-mark,
+        .hero-logo .astra-mark {
+            transform: rotate(0deg);
+            transition: transform 500ms cubic-bezier(.2,.8,.2,1);
+        }
+
+        .logo:hover .astra-mark,
+        .hero-logo:hover .astra-mark {
+            transform: rotate(-7deg) scale(1.04);
+        }
 
         .brand {
             position: relative;
@@ -2556,39 +2564,13 @@
             }
         }
 
-        /* Aurora Cloud logo: clean, centered, never stretched or cropped */
-        .logo,
-        .hero-logo {
-            background: #ffffff;
-            overflow: hidden;
-        }
-
-        .aurora-logo-img {
-            display: block;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: center;
-            border-radius: inherit;
-        }
-
-        .logo .aurora-logo-img {
-            width: 100%;
-            height: 100%;
-        }
-
-        .hero-logo .aurora-logo-img {
-            width: 100%;
-            height: 100%;
-        }
-
     </style>
 </head>
 <body>
     <div class="app">
         <aside class="sidebar">
             <div class="brand">
-                <div class="logo"><img class="aurora-logo-img" src="Aurora cloud logo.webp" alt="Aurora Cloud"></div>
+                <div class="logo"><img class="aurora-logo-img" src="./Aurora%20cloud%20logo.webp" alt="Aurora Cloud"></div>
                 <div>
                     <div class="brand-title">Hash&ke GPT <span>Astra AI</span></div>
                     <span class="brand-subtitle">Private AI Workspace</span>
@@ -2636,7 +2618,7 @@
 
             <section id="chat" class="chat">
                 <div id="welcome" class="welcome">
-                    <div class="hero-logo"><img class="aurora-logo-img" src="Aurora cloud logo.webp" alt="Aurora Cloud"></div>
+                    <div class="hero-logo"><img class="aurora-logo-img" src="./Aurora%20cloud%20logo.webp" alt="Aurora Cloud"></div>
                     <h1>What can Astra help you build?</h1>
                     <p>
                         A polished AI workspace with persistent local memory, Gemini models,
