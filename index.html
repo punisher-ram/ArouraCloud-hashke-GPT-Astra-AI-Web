@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#07110d">
     <title>Hash&ke GPT Astra AI</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop stop-color='%236ee7b7'/%3E%3Cstop offset='.55' stop-color='%2310b981'/%3E%3Cstop offset='1' stop-color='%23047857'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='2' y='2' width='60' height='60' rx='16' fill='url(%23g)'/%3E%3Cpath d='M17 43c4-1 7-3 9-7l7-15c1-2 3-3 5-3h2c2 0 3 2 2 4l-5 11c-1 2 0 3 2 3h8c2 0 3 2 2 4-1 2-3 3-5 3H17Z' fill='%2302140d'/%3E%3Cpath d='M21 31c2-1 4-2 5-5l3-7c1-2 3-3 5-3h2c2 0 3 2 2 4l-3 7c-1 2 0 3 2 3h5c2 0 3 2 2 4-1 2-3 3-5 3H21Z' fill='%2302140d' opacity='.86'/%3E%3C/svg%3E">
+    <link rel="icon" type="image/webp" href="Aurora cloud logo.webp">
     <style>
         :root {
             --bg: #050b08;
@@ -347,6 +347,22 @@
         .logo .astra-mark {
             width: 27px;
             height: 27px;
+        }
+
+        /* Aurora Cloud logo — contained cleanly inside the existing logo boxes */
+        .aurora-logo-img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            border-radius: inherit;
+        }
+
+        .logo,
+        .hero-logo {
+            background: #ffffff;
+            overflow: hidden;
         }
 
         .welcome h1 {
@@ -2344,16 +2360,6 @@
             transform: translateY(-5px) rotate(-1.5deg) scale(1.045);
         }
 
-        .logo .astra-mark,
-        .hero-logo .astra-mark {
-            transform: rotate(0deg);
-            transition: transform 500ms cubic-bezier(.2,.8,.2,1);
-        }
-
-        .logo:hover .astra-mark,
-        .hero-logo:hover .astra-mark {
-            transform: rotate(-7deg) scale(1.04);
-        }
 
         .brand {
             position: relative;
@@ -2550,13 +2556,39 @@
             }
         }
 
+        /* Aurora Cloud logo: clean, centered, never stretched or cropped */
+        .logo,
+        .hero-logo {
+            background: #ffffff;
+            overflow: hidden;
+        }
+
+        .aurora-logo-img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+            border-radius: inherit;
+        }
+
+        .logo .aurora-logo-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .hero-logo .aurora-logo-img {
+            width: 100%;
+            height: 100%;
+        }
+
     </style>
 </head>
 <body>
     <div class="app">
         <aside class="sidebar">
             <div class="brand">
-                <div class="logo"><svg class="astra-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="astraG" x1="8" y1="38" x2="37" y2="7" gradientUnits="userSpaceOnUse"><stop stop-color="#a7f3d0"/><stop offset="0.45" stop-color="#34d399"/><stop offset="1" stop-color="#059669"/></linearGradient></defs><path d="M8 34.5c3.5-.7 6.2-2.7 8-6.1l5.2-9.9c.9-1.7 2.5-2.7 4.4-2.7h2.1c2 0 3.2 2.1 2.3 3.9l-2.5 5c-.9 1.7.4 3.9 2.3 3.9h6.2c2.1 0 3.3 2.4 2.1 4.2l-.8 1.2c-.9 1.3-2.4 2.1-4 2.1H8Z" fill="url(#astraG)"/><path d="M10.5 25.8c2.7-.6 4.8-2.2 6.1-4.8l3.8-7.2c.8-1.6 2.3-2.5 4.1-2.5h1.6c1.8 0 3 1.9 2.2 3.5l-2 4c-.8 1.6.3 3.5 2.2 3.5h4.2c1.8 0 3 2 2.1 3.5l-.3.5c-.8 1.5-2.3 2.4-4 2.4H10.5Z" fill="#0b2419" opacity=".92"/><path d="M14 18.1c2-.5 3.5-1.7 4.5-3.5l2.6-5c.7-1.4 2-2.2 3.6-2.2h1.2c1.6 0 2.6 1.7 1.9 3.1l-1.3 2.5c-.7 1.4.3 3.1 1.9 3.1h2.9c1.7 0 2.8 1.9 1.9 3.3l-.1.1c-.8 1.3-2.1 2.1-3.7 2.1H14Z" fill="#02140d" opacity=".78"/></svg></div>
+                <div class="logo"><img class="aurora-logo-img" src="Aurora cloud logo.webp" alt="Aurora Cloud"></div>
                 <div>
                     <div class="brand-title">Hash&ke GPT <span>Astra AI</span></div>
                     <span class="brand-subtitle">Private AI Workspace</span>
@@ -2604,7 +2636,7 @@
 
             <section id="chat" class="chat">
                 <div id="welcome" class="welcome">
-                    <div class="hero-logo"><svg class="astra-mark" viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="astraG" x1="8" y1="38" x2="37" y2="7" gradientUnits="userSpaceOnUse"><stop stop-color="#a7f3d0"/><stop offset="0.45" stop-color="#34d399"/><stop offset="1" stop-color="#059669"/></linearGradient></defs><path d="M8 34.5c3.5-.7 6.2-2.7 8-6.1l5.2-9.9c.9-1.7 2.5-2.7 4.4-2.7h2.1c2 0 3.2 2.1 2.3 3.9l-2.5 5c-.9 1.7.4 3.9 2.3 3.9h6.2c2.1 0 3.3 2.4 2.1 4.2l-.8 1.2c-.9 1.3-2.4 2.1-4 2.1H8Z" fill="url(#astraG)"/><path d="M10.5 25.8c2.7-.6 4.8-2.2 6.1-4.8l3.8-7.2c.8-1.6 2.3-2.5 4.1-2.5h1.6c1.8 0 3 1.9 2.2 3.5l-2 4c-.8 1.6.3 3.5 2.2 3.5h4.2c1.8 0 3 2 2.1 3.5l-.3.5c-.8 1.5-2.3 2.4-4 2.4H10.5Z" fill="#0b2419" opacity=".92"/><path d="M14 18.1c2-.5 3.5-1.7 4.5-3.5l2.6-5c.7-1.4 2-2.2 3.6-2.2h1.2c1.6 0 2.6 1.7 1.9 3.1l-1.3 2.5c-.7 1.4.3 3.1 1.9 3.1h2.9c1.7 0 2.8 1.9 1.9 3.3l-.1.1c-.8 1.3-2.1 2.1-3.7 2.1H14Z" fill="#02140d" opacity=".78"/></svg></div>
+                    <div class="hero-logo"><img class="aurora-logo-img" src="Aurora cloud logo.webp" alt="Aurora Cloud"></div>
                     <h1>What can Astra help you build?</h1>
                     <p>
                         A polished AI workspace with persistent local memory, Gemini models,
